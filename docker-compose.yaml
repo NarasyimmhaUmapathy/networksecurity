@@ -1,0 +1,14 @@
+version: '3'
+services:  # container
+
+
+   mongodb:
+    image: mongo
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=narasyimmha
+      - MONGO_INITDB_ROOT_PASSWORD=jarhead9212
+    ports:
+      - 27017:27017
+    
+    volumes:
+      - ./Network_Data:/data/db
